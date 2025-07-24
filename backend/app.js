@@ -23,7 +23,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://mern-auth-system-git-main-siyafs-projects.vercel.app",
     credentials: true,
   })
 );
