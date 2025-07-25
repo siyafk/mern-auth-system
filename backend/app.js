@@ -23,7 +23,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(
   cors({
-    origin: "https://mern-authh-system.vercel.app/",
+    origin: "https://mern-auth-system-1-cr5c.onrender.com",
     credentials: true,
   })
 );
