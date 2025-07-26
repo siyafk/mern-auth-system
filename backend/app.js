@@ -23,10 +23,15 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(
   cors({
-    origin: "https://mern-auth-system-1-cr5c.onrender.com",
+    origin: [
+      "https://mern-auth-system-1-cr5c.onrender.com",
+      "http://localhost:5173"
+    ],
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     credentials: true,
   })
 );
+
 
 // 🚪 Routes
 app.use("/api/auth", authRouter);
